@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the Color</title>
+  
+    <style>
+       body{
+           transition: all 1.5s ease;
+       }
+    </style>
+
+</head>
+
+<body>
+    <header style="text-align: center; font-style: italic;color: lightseagreen;"><h1>Welcome to TechnoElevate</h1></header>
+    <select onchange = "color(this.value)" style= " width: 550px; height:50px;font-size: larger ;
+    border-radius: 50px;position: absolute; border-top-style: none;border-left-style: none;
+    border-right-style: none;border-bottom-style: none;margin: 140px 430px;">
+        <option value="">Open this select menu</option>
+        <option value="brown">Brown</option>
+        <option value="pink">Pink</option>
+        <option value="red">Red</option>
+        <option value="black">Black</option>
+        <option value="purple">Purple</option>
+      </select>
+      
+<script>
+    function color(value){
+        document.body.style.backgroundColor=value;
+    }
+
+</script>
+    
+</body>
+</html>
